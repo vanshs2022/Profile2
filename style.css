@@ -1,0 +1,634 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(191, 254, 255, 255);
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#pagename a:hover {
+    color: #fff59b;
+    font-weight: 25px;
+}
+
+/* CSS for home page */
+
+#pagename {
+    padding: 10px 10px ;
+    width: 100vw;
+    position: fixed;
+    background: linear-gradient(to right, rgba(131, 230, 240, 1), rgba(131, 230, 240, 0.5));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    background-color: transparent;
+    height: 70px;
+    p{
+        margin-bottom: 10px;
+    }
+}
+
+#navbar li {
+    list-style-type: none;
+    float: right;
+    color: black;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Sans Serif';
+    margin-top: 10px;
+}
+
+#navbar li:hover{
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(57, 154, 187));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#web-name {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 40px;
+    float: left;
+    margin-left: 0px;
+}
+
+
+#web-name:hover{
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(57, 154, 187));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* CSS for home page */
+
+
+
+#main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/bgmain.png');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+
+}
+
+#main1 {
+    margin-bottom: 50px;
+}
+
+#pg1txt{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(45deg, rgb(66, 65, 65), rgb(145, 207, 227));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#pg1txt{
+    font-size: 5rem;
+    font-weight: bold;
+    color: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black; 
+}
+
+#webdev-aiml p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: transparent;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    /* background-image: linear-gradient(to bottom right, #3498db, #0377eb); */
+    background-clip: text;
+    -webkit-background-clip: text; 
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Shadow to make text readable */
+    transition: color 0.3s, font-size 0.3s;
+}
+
+#webdev-aiml p:hover {
+    color: #3498db;
+    font-size: 1.5rem;
+}
+
+
+
+#downloadButton {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    border: 2px solid #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+#downloadButton::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    transition: all 0.5s;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-25%, -25%) rotate(45deg);
+    opacity: 0;
+}
+
+#downloadButton:hover::before {
+    opacity: 1;
+}
+
+#downloadButton:hover {
+    color: black;
+    border-color: #3498db;
+}
+
+#downloadButton span {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* CSS for about page */
+
+#me {
+    padding: 100px;
+    background-color: rgba(255, 253, 246, 255);
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about1 {
+    padding-top: 10px;
+    padding-right: 30px;
+    height: 500px;
+    border-right: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+#about1 p {
+    font-size: 100px;
+    margin: 0px;
+    font-family: 'Times New Roman';
+}
+
+#about2 {
+    padding-top: 200px;
+    padding-right: 30px;
+    height: 600px;
+    padding-left: 30px;
+    width: 750px;
+}
+
+#about2 p {
+    font-size: 20px;
+}
+
+/* CSS for education page */
+
+#education {
+    margin-top: -20px;
+    height: 900px;
+    background-color: black;
+    color: azure;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#education1 {
+    padding-top: 10px;
+    padding-right: 30px;
+    height: 700px;
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+#education1 p {
+    font-size: 100px;
+    margin: 0px;
+    font-family: 'Times New Roman';
+}
+
+#education2 {
+    padding-top: 200px;
+    padding-right: 30px;
+    height: 600px;
+    padding-left: 30px;
+    width: 750px;
+}
+
+#education2 p {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+/* CSS for education table */
+
+#edtable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+    color: white;
+}
+
+#edtable th,
+#edtable td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+}
+
+#edtable th {
+    background-color: #333;
+}
+
+#edtable tr:hover {
+    background-color: #444;
+    color: #ddd;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+/* CSS for skills */
+
+#skills {
+    background-color: rgba(255, 253, 246, 255);
+    margin-top: -20px;
+    height: 1200px;
+}
+
+#skill-list{
+    margin-top: 100px;
+}
+
+#skill-head {
+    height: 120px;
+    width: 400px;
+    margin-left: 100px;
+    font-size: 100px;
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+#skill-head p {
+    margin: 0px;
+}
+
+.skillelement{
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 150px;
+    background-color: azure;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    transition: transform 0.3s;
+    /* Add transition for smooth effect */
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}    
+
+
+.skillimg1{
+    width: 200px;
+}
+
+.skillimg{
+    width: 300px;
+}
+
+#skills1{
+    border-bottom: 5px solid brown;
+}
+
+#skills2{
+    border-bottom: 5px solid red;
+}
+
+#skills3{
+    border-bottom: 5px solid orange;
+}
+
+#skills4{
+    border-bottom: 5px solid pink;
+}
+
+#skills5{
+    border-bottom: 5px solid violet;
+}
+
+#skills6{
+    border-bottom: 5px solid blue;
+}
+
+.skillelement:hover {
+    transform: translate(10px, -10px);
+}
+
+
+/* CSS for Wexp */
+
+#wexp {
+    height: 900px;
+    background-color: #fff59b;
+    margin-top: -20px;
+    padding: 100px;
+}
+
+#wexp1 h2 {
+    font-size: 50px;
+}
+
+#wexp1 {
+    width: 1050px;
+    font-size: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wexpdiv {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin-top: 200px;
+    margin-left: 100px;
+    background-color: azure;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    transition: transform 0.3s;
+    /* Add transition for smooth effect */
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#aniwork{
+    margin-top: 100px;
+}
+
+.img {
+    width: 300px;
+}
+
+.wexpdiv p {
+    margin-top: 0px;
+}
+
+.bold {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Adding color to the bottom of the divs in wexp */
+#exp1 {
+    border-bottom: 5px solid brown;
+}
+
+#exp2 {
+    border-bottom: 5px solid red;
+}
+
+#exp3 {
+    border-bottom: 5px solid rgb(37, 37, 37);
+}
+
+.wexpdiv:hover {
+    transform: translate(10px, -10px);
+}
+
+
+/* CSS for Contact */
+
+#contact {
+    height: 600px;
+    background-color: rgb(29, 29, 29);
+    margin-top: -20px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    color: azure;
+}
+
+#head {
+    font-size: 80px !important;
+    font-weight: bold;
+}
+
+
+
+#contactinfo p {
+    font-size: 20px;
+}
+
+#address1 {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+#address2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+
+
+/* CSS for Contact form */
+#form {
+    display: flex;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(29, 29, 29);
+    border-bottom: 3px solid azure;
+    font-size: 15px;
+    color: #ddd;
+}
+
+input[type="text"] :active {
+    background-color: #ccc;
+}
+
+input[type="email"] :active {
+    background-color: #ccc;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-bottom: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+input:focus {
+    outline: none;
+    color: #ddd;
+    border-color: lightblue;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 100px; /* Adjust this value to move the popup down or up */
+    right: 20px; /* Adjust this value to move the popup left or right */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+/* CSS for text animation */
+
+@keyframes animateLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+        /* Start from left, 100px off-screen */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* End at original position */
+    }
+}
+
+.animate-left {
+    opacity: 0;
+    animation: animateLeft 2s ease-in-out forwards;
+}
+
+/* CSS for buttons */
+#buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn {
+    /* padding: 10px 10px; */
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+.btn:hover {
+    border: 5px solid lightblue;
+}
+
+#buttons img {
+    width: 30px;
+}
+
+@keyframes animateTopToBottom {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+        /* Start from top, 100px off-screen */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* End at original position */
+    }
+}
+
+#main1 p{
+    opacity: 0;
+    animation: animateTopToBottom 2s ease-in-out forwards;
+}
+
+
+
+#footer{
+    background-color: #333;
+    color: azure;
+    font-size: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
