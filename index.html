@@ -14,7 +14,6 @@
         <div id="pagename">
             <p id="web-name">Vansh Sharma</p>
             <ul id="navbar">
-                <li></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -24,18 +23,19 @@
         </div>
     </nav>
 
-    <section id="main" >
+    <section id="main">
         <div id="main1">
             <p id="pg1txt">
                 Web Developer | AIML Enthusiasist
             </p>
             <div id="webdev-aiml">
-                <p>Passionate about crafting innovative web solutions. Eager to explore AI/ML's limitless possibilities.</p>
-            </div>            
+                <p>Passionate about crafting innovative web solutions. Eager to explore AI/ML's limitless possibilities.
+                </p>
+            </div>
         </div>
-        <div id="main2" >
+        <div id="main2">
             <button id="downloadButton"><span>Get Resume</span></button>
-        </div>        
+        </div>
     </section>
 
     <section id="me">
@@ -170,7 +170,7 @@
                 <p class="bold">
                     SCRS
                 </p>
-                <p >
+                <p>
                     Web Development
                 </p>
             </div>
@@ -180,10 +180,13 @@
     <section id="contact">
         <div id="contactinfo">
             <p id="head">Contact Info</p>
-            <p id="address1">F-533, Men's hostel</p>
-            <p id="address2">VIT University, Tamil Nadu</p>
-            <p>+91 93197 7XXXX</p>
-            <p>vns444555@gmail.com</p>
+            <div id="details">
+                <p id="address1">F-533, Men's hostel</p>
+                <p id="address2">VIT University, Tamil Nadu</p>
+                <p>+91 93197 7XXXX</p>
+                <p>vns444555@gmail.com</p>
+            </div>
+
             <div id="buttons">
                 <button id="github-button" class="btn">
                     <a href="https://github.com/vanshs2022" target="_blank">
@@ -218,10 +221,11 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
-        <div id="popup" >
+        <div id="popup">
             <span id="popupMessage"></span>
-            <button id="closePopup" style="position: absolute; top: 10px; right: 10px; background-color: transparent; color: white; border: none; cursor: pointer;">&times;</button>
-        </div>        
+            <button id="closePopup"
+                style="position: absolute; top: 10px; right: 10px; background-color: transparent; color: white; border: none; cursor: pointer;">&times;</button>
+        </div>
     </section>
 
     <section id="footer">
@@ -229,10 +233,29 @@
     </section>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "rF4yD2Zrv8WpL8oeU1OfF",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="rF4yD2Zrv8WpL8oeU1OfF"
+        domain="www.chatbase.co"
+        defer>
+        </script>
     <script src="script.js"></script>
 </body>
 
