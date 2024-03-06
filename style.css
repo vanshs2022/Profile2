@@ -29,8 +29,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    
 }
 
 nav {
@@ -101,6 +99,7 @@ nav {
 
 #pg1txt{
     font-size: 2rem;
+    opacity: 1;
     font-weight: bold;
     color: black;
     background: linear-gradient(45deg, rgb(66, 65, 65), rgb(145, 207, 227));
@@ -126,7 +125,7 @@ nav {
     /* background-image: linear-gradient(to bottom right, #3498db, #0377eb); */
     background-clip: text;
     -webkit-background-clip: text; 
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Shadow to make text readable */
+    /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); Shadow to make text readable */
     transition: color 0.3s, font-size 0.3s;
 }
 
@@ -359,15 +358,11 @@ nav {
     border-bottom: 5px solid blue;
 }
 
-.skillelement:hover {
-    transform: translate(10px, -10px);
-}
-
 
 /* CSS for Wexp */
 
 #wexp {
-    height: 900px;
+    height: 1000px;
     background-color: #fff59b;
     margin-top: -20px;
     padding: 100px;
@@ -386,6 +381,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 300px;
 }
 
 .wexpdiv {
@@ -434,10 +430,6 @@ nav {
     border-bottom: 5px solid rgb(37, 37, 37);
 }
 
-.wexpdiv:hover {
-    transform: translate(10px, -10px);
-}
-
 
 /* CSS for Contact */
 
@@ -456,14 +448,16 @@ nav {
     font-weight: bold;
 }
 
-
+#details{
+    padding-left: 50px;
+}
 
 #contactinfo p {
     font-size: 20px;
 }
 
 #address1 {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 0px;
     font-size: 20px;
 }
