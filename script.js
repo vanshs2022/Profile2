@@ -20,7 +20,7 @@ gsap.from(".work",{
     scrollTrigger:".work"
 })
 gsap.from("#head",{
-    y:"-200px",
+    y:"-100px",
     duration:3,
     scrollTrigger:"#head"
 })
@@ -40,6 +40,59 @@ gsap.from("#aniwork",{
     scrollTrigger:"#aniwork"
 })
 
+gsap.from("#skills1",{
+    x:"-100px",
+    duration:2,
+    scrollTrigger:"#skills1"
+})
+
+gsap.from("#skills4",{
+    x:"-100px",
+    duration:2,
+    scrollTrigger:"#skills4"
+})
+
+gsap.from("#skills2",{
+    y:"-100px",
+    duration:2,
+    scrollTrigger:"#skills2"
+})
+
+gsap.from("#skills5",{
+    y:"100px",
+    duration:2,
+    scrollTrigger:"#skills3"
+})
+
+gsap.from("#skills3",{
+    x:"100px",
+    duration:2,
+    scrollTrigger:"#skills3"
+})
+
+gsap.from("#skills6",{
+    x:"100px",
+    duration:2,
+    scrollTrigger:"#skills6"
+})
+
+gsap.from("#exp1",{
+    y:"100px",
+    duration:2,
+    scrollTrigger:"#exp1"
+})
+
+gsap.from("#exp2",{
+    y:"-100px",
+    duration:2,
+    scrollTrigger:"#exp2"
+})
+
+gsap.from("#exp3",{
+    y:"100px",
+    duration:2,
+    scrollTrigger:"#exp3"
+})
 
 // Resume functioning
 
@@ -57,6 +110,24 @@ function downloadResume() {
 
 downloadButton.addEventListener('click', downloadResume);
 
+document.querySelectorAll('.skillelement').forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+        element.style.transform = 'translate(10px, -10px)';
+    });
+    element.addEventListener('mouseleave', () => {
+        element.style.transform = 'none';
+    });
+});
+
+
+document.querySelectorAll('.wexpdiv').forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+        element.style.transform = 'translate(10px, -10px)';
+    });
+    element.addEventListener('mouseleave', () => {
+        element.style.transform = 'none';
+    });
+});
 
 document.getElementById("form1").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -65,24 +136,7 @@ document.getElementById("form1").addEventListener("submit", function (event) {
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
 
-    let data = [[name, email, message]];
-
-    let existingData = [];
-    try {
-        existingData = Papa.parse(localStorage.getItem("form_data"), { header: true }).data;
-    } catch (e) {
-        console.log("No existing data file found. Creating new file.");
-    }
-
-    data = existingData.concat(data);
-
-    let csv = Papa.unparse(data);
-
-    localStorage.setItem("form_data", csv);
-
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
+    console.log(message + " is sent by " + name + " to you via " + email);
 
     // Show popup
     let popup = document.getElementById("popup");
@@ -91,8 +145,11 @@ document.getElementById("form1").addEventListener("submit", function (event) {
     popup.style.display = "block";
 
     // Close popup after 5 seconds
-    setTimeout(function() {
+    setTimeout(function () {
         popup.style.display = "none";
     }, 5000);
+
+    // Reset the form
+    document.getElementById("form1").reset();
 });
 
